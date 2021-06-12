@@ -1,0 +1,17 @@
+How to download spotify in ubuntu
+
+
+1) Installing Spotify as a Snap Package
+   sudo snap install spotify
+
+2) Installing Spotify with apt 
+
+   Import the repository’s GPG key:
+   sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 4773BD5E130D1D45
+   
+   Add the Spotify APT repository to your system’s software repository list:
+   echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+   
+   Once the repository is enabled, update apt sources and install Spotify:
+   sudo apt update
+   sudo apt install spotify-client
